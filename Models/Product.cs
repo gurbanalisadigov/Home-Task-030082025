@@ -11,20 +11,20 @@ namespace HomeTasks03082025.Models
         public double InCome;
         public int Count;
 
-        public Product(string BrandName, string Model, double Price, double Cost, int Count)
+        public Product(string brandName, string model, double price, double cost, int count)
         {
 
-            this.BrandName = BrandName;
-            this.Model = Model;
-            this.Price = Price;
-            this.Cost = Cost;
+            this.BrandName = brandName;
+            this.Model = model;
+            this.Price = price;
+            this.Cost = cost;
             this.InCome = 0;
-            this.Count = Count;
+            this.Count = count;
 
-            if (Count < 0)
+            if (count < 0)
                 this.Count = 0;
             else
-                this.Count = Count;
+                this.Count = count;
 
         }
         public void PrintInfo()

@@ -10,13 +10,18 @@ public class Student
     public double Point;
     public bool IsGraduated;
 
-    public Student(string Name, string Surname, string Group, double Point)
+    public Student(string name, string surname, string group, double point)
     {
-        this.Name = Name;
-        this.Surname = Surname;
-        this.Group = Group;
-        this.Point = Point;
-        this.IsGraduated = true;
+        this.Name = name;
+        this.Surname = surname;
+        this.Group = group;
+        this.Point = point;
+        this.IsGraduated = IsGraduateAssigner(point);
+    }
+
+    public bool IsGraduateAssigner(double point)
+    {
+        return point >= 65;
     }
     public void PrintInfo()
     {
