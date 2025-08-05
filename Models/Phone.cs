@@ -6,7 +6,7 @@ namespace HomeTasks03082025.Models
     {
        private string _ram;
        private string _color;
-       public double _balance;
+       private double _balance;
 
         public string Ram
         {
