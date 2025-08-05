@@ -6,12 +6,12 @@ namespace HomeTasks03082025.Models
     {
         public string BrandName;
         public string Model;
-        public double Price;
-        public double Cost;
-        public double InCome;
+        public decimal Price;
+        public decimal Cost;
+        public decimal InCome;
         public int Count;
 
-        public Product(string brandName, string model, double price, double cost, int count)
+        public Product(string brandName, string model, decimal price, decimal cost, int count)
         {
 
             this.BrandName = brandName;
